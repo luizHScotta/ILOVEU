@@ -1,0 +1,225 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #D10710;
+}
+
+@font-face {
+    font-family: 'love' ;
+    src: url('fonts/Chocolate otf.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'true' ;
+    src: url('fonts/Breathing.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.Home-conteiner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home-img img{
+    width: 40vw;
+    height: auto;
+}
+
+.home-img{
+    animation: move 3s infinite alternate ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2vw);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-text {
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: auto;
+}
+
+#euamo, #muito, #voce, #itala {
+    margin: 0;
+    text-align: center;
+}
+
+#euamo {
+    font-size: 12vw;
+    font-family: 'love';
+    color: #640B10;
+    margin-bottom: -9vw;
+}
+
+#muito {
+    margin-left:10vw ; 
+    font-size: 5vw;
+    font-family: 'true';
+    color: #FEBBCD;
+    z-index: 1000;
+    margin-bottom: -9vw;
+}
+
+#voce {
+    font-size: 10vw;
+    margin-right:18vw ;
+    font-family: 'love';
+    color: #640B10;
+    margin-top: -2vw;
+    margin-bottom: -6vw;
+}
+
+#itala {
+    font-size: 4.5vw;
+    font-family: 'true';
+    color: #FEBBCD;
+    z-index: 1000;
+    margin-bottom: -6vw;
+}
+
+/* sessão da Historia*/
+.content-history{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line{
+    width: 3px;
+    height: 70vh;
+    background-color: white;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.itens-history{
+    width: 20vw;
+}
+
+.itens-history img{
+    width: 20vw;
+    height: auto;
+}
+
+.itens-history p{
+    font-size: 1vw;
+    text-align: justify;
+    align-items: center;
+}
+
+/* sessão dos motivos*/
+
+.content-motivo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.motivos{
+    width: 80%;
+    height: 80vh;
+    padding: 3vw;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+
+}
+
+.motivos button{
+    font-size: 1vw;
+    width: 15vw;
+    height: 5vh;
+    border: #640B10;
+    border-radius: 30vw;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    background-color: #FEBBCD;
+    color: #640B10;
+}
+
+.motivos :hover{
+    background-color: white;
+}
+
+.motivos span{
+    color: #640B10;
+    font-size: 3.5vw;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .Home-conteiner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .home-img img{
+        width: 60vw;
+    }
+
+    #euamo {
+        font-size: 12vw;
+    }
+    
+    #muito {
+        font-size: 6vw;
+    }
+    
+    #voce {
+        font-size: 10vw;
+    }
+    
+    #itala {
+        font-size: 6vw;
+    }
+
+    .itens-history p{
+        font-size: 2vw;
+    }
+
+    .motivos button{
+        font-size: 2vw;
+        width: 20vw;
+        height: 10vh;
+        border-radius: 10vw;
+    }
+}
+
